@@ -73,7 +73,7 @@ Retrofit响应数据及异常处理策略:[http://blog.csdn.net/dd864140130/arti
          
 	  Response response = chain.proceed(oldRequest);
 会不会导致2次请求的发送?如果是這样的话,感觉这个方法就不太可行了.
-
+经过fiddler抓包分析,发现还是只发出了一个请求,这种方法是可行的 -11月14日
 待研究,待指点....
 
 github:
